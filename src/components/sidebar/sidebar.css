@@ -1,0 +1,27 @@
+.sidebar {
+    @apply fixed w-screen h-screen top-0 right-0 z-50 translate-x-full transition-all duration-[.6s]
+}
+
+.sidebar.active {
+    @apply translate-x-0
+}
+
+.sidebar-content {
+    @apply w-full h-full bg-neutral-900 opacity-[.99] fixed top-0 right-0 flex flex-col p-10 text-xl text-neutral-300 md:w-1/2 hover:opacity-100
+}
+
+.sidebar-header {
+    @apply text-4xl mb-32 flex justify-between
+}
+
+.sidebar-link {
+    @apply px-7 py-3 border border-red-700 rounded-xl hover:bg-red-700 transition-all duration-300 shadow-xl hover:shadow-red-900
+}
+
+.sidebar-item {
+    @apply mb-10
+}
+
+.sidebar-nav {
+    @apply flex flex-col justify-center items-start
+}

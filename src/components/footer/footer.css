@@ -1,0 +1,15 @@
+.footer {
+    @apply w-full px-40 bg-zinc-900 text-white flex justify-between items-center relative z-50 mt-auto
+}
+
+.footer-img {
+    @apply w-44
+}
+
+.footer-text {
+    @apply font-extralight text-base text-gray-200
+}
+
+.footer-logo {
+    @apply font-light text-2xl
+}

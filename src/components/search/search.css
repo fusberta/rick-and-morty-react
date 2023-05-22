@@ -1,0 +1,15 @@
+.search {
+    @apply mt-44 border border-stone-300 rounded-xl max-w-fit text-xl flex flex-row items-center justify-center bg-white 
+}
+
+.search input {
+    @apply px-5 py-3 rounded-l-xl focus:outline-none w-60 sm:w-[380px]
+}
+
+.search-btn {
+    @apply px-4 py-3 text-center
+}
+
+.search-bar {
+    @apply flex items-center gap-9 justify-center flex-col ml-0 sm:flex-row sm:items-end sm:ml-20 sm:gap-0
+}

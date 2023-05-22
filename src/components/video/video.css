@@ -1,0 +1,7 @@
+.video {
+    @apply min-h-screen bg-zinc-800 flex items-center justify-center flex-col
+}
+
+.video-label {
+    @apply text-5xl text-zinc-300 mb-16 font-semibold
+}

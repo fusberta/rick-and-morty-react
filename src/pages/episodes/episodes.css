@@ -1,0 +1,23 @@
+.episodes-page {
+    @apply bg-zinc-200 min-h-screen rounded-b-[120px] pb-20 shadow-inner flex flex-col items-center
+}
+
+.showcase {
+    @apply flex justify-center items-center flex-wrap max-w-screen-2xl mx-auto mt-8 
+}
+
+.title-container {
+    @apply flex flex-col pt-40 mx-auto text-center
+}
+
+.episode-name {
+    @apply text-5xl font-semibold text-zinc-800 mb-6 tracking-tight flex items-center relative
+}
+
+.episode-btn{
+    @apply text-zinc-200 rounded-xl px-4 py-2 bg-blue-700 transition-all duration-500 hover:tracking-wide hover:bg-blue-600 cursor-pointer ml-4
+}
+
+.episode-date {
+    @apply text-2xl font-thin
+}

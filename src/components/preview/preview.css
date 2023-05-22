@@ -1,0 +1,36 @@
+.preview {
+    @apply text-center min-h-max max-h-max bg-zinc-300 py-10 flex flex-col 
+}
+
+.preview-label {
+    @apply text-3xl flex justify-between font-bold px-48 max-xl:px-24 max-md:px-10 max-md:text-xl
+}
+
+.swiper {
+    margin-top: 45px;
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #bbb;
+}
+
+.swiper-slide img {
+    @apply w-full h-96 object-cover object-center rounded-2xl max-sm:h-60
+}
+
+.label-col {
+    @apply flex flex-col
+}
+
+.label-col span {
+    -webkit-text-stroke: 1px black;
+    @apply text-5xl text-red-50
+}

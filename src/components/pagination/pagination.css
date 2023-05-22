@@ -1,0 +1,15 @@
+.pagination-item, .break {
+    @apply text-2xl px-4 py-2 mx-1 cursor-pointer border rounded-lg transition 
+    hover:bg-red-600 hover:text-white
+    max-sm:text-xl max-sm:mx-0
+}
+.pagination {
+    @apply flex justify-center items-center mt-12
+}
+.pagination-active-item {
+    @apply bg-red-600 text-white
+}
+.arrows {
+    @apply text-4xl my-2 mx-4
+    max-sm:text-2xl max-sm:mx-2
+}

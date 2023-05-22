@@ -1,0 +1,12 @@
+.not-found-bg {
+    @apply flex justify-center items-center min-h-screen bg-[url('../../../public/res/imgs/bg-not-found.jpg')]
+}
+
+.not-found-container {
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    @apply bg-zinc-300 w-fit py-10 px-5 mx-20 rounded-3xl border-4 border-white text-center text-slate-100 text-5xl font-extrabold flex flex-col justify-center items-center
+}
+
+.not-found-container img {
+    @apply w-96
+}

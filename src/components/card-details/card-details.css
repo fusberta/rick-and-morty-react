@@ -1,0 +1,55 @@
+.card-details {
+    @apply min-h-screen w-full bg-zinc-300 flex flex-col justify-center items-center text-center rounded-b-[120px] relative overflow-hidden
+}
+
+.details-container {
+    @apply z-10
+}
+
+.circle {
+    @apply rounded-full absolute
+}
+
+.circle.top-left {
+    @apply bg-[#f4a48c] -top-[450px] -left-48 w-[1300px] h-[1300px] opacity-40
+}
+
+.circle.top-right {
+    @apply bg-[#044443] -top-[450px] -right-48 w-[1300px] h-[1300px] opacity-40
+}
+
+.circle.bottom-left {
+    @apply bg-[#a06276] -bottom-[450px] -left-48 w-[1300px] h-[1300px] opacity-40
+}
+
+.circle.bottom-right {
+    @apply bg-[#c6650b] -bottom-[450px] -right-48 w-[1300px] h-[1300px] opacity-40
+}
+
+.character-name {
+    @apply font-semibold text-4xl text-zinc-800 mb-5
+}
+
+.details-container > img {
+    @apply rounded-md mx-auto
+}
+
+.status-Alive {
+    @apply w-full bg-green-700 mt-5 text-white text-xl py-1 font-semibold tracking-wider rounded-md
+}
+
+.status-Dead {
+    @apply w-full bg-red-700 mt-5 text-white text-xl py-1 font-bold tracking-wider rounded-md
+}
+
+.status-unknown {
+    @apply w-full bg-zinc-700 mt-5 text-white text-xl py-1 font-bold tracking-wider rounded-md
+}
+
+.details-content {
+    @apply text-start mt-5 text-xl
+}
+
+.content-label {
+    @apply font-bold
+}
