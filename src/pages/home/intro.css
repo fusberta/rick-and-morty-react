@@ -7,15 +7,15 @@
 }
 
 .container {
-    @apply z-10 px-24 text-white text-xl max-w-7xl text-center mx-auto
+    @apply z-10 px-24 text-white max-w-7xl text-center mx-auto max-md:px-5
 }
 
 .label {
-    @apply text-5xl mb-10 font-semibold
+    @apply text-5xl mb-10 font-semibold max-sm:text-3xl max-sm:mb-4
 }
 
 .text {
-    @apply text-3xl 
+    @apply text-3xl max-sm:text-lg
 }
 
 .highlight {

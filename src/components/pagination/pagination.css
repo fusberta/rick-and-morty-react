@@ -1,15 +1,17 @@
 .pagination-item, .break {
     @apply text-2xl px-4 py-2 mx-1 cursor-pointer border rounded-lg transition 
     hover:bg-red-600 hover:text-white
-    max-sm:text-xl max-sm:mx-0
+    max-md:text-xl max-md:mx-0 max-[600px]:text-lg max-[600px]:px-3 max-[600px]:py-2
+    max-[500px]:text-base max-[500px]:px-2 max-[500px]:py-1
 }
 .pagination {
     @apply flex justify-center items-center mt-12
+    max-sm:mt-6
 }
 .pagination-active-item {
     @apply bg-red-600 text-white
 }
 .arrows {
     @apply text-4xl my-2 mx-4
-    max-sm:text-2xl max-sm:mx-2
+    max-sm:text-2xl max-sm:mx-2 max-[600px]:text-lg max-[600px]:mx-1
 }

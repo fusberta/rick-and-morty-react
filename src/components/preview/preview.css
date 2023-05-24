@@ -1,14 +1,18 @@
 .preview {
-    @apply text-center min-h-max max-h-max bg-zinc-300 py-10 flex flex-col 
+    @apply text-center bg-zinc-300 py-10 flex flex-col 
+    max-md:py-6 
 }
 
 .preview-label {
-    @apply text-3xl flex justify-between font-bold px-48 max-xl:px-24 max-md:px-10 max-md:text-xl
+    @apply text-3xl flex justify-between font-bold px-48 max-xl:px-24 max-md:px-12 max-md:text-xl
+    max-[500px]:text-lg 
 }
+
 
 .swiper {
     margin-top: 45px;
     width: 100%;
+    @apply max-[500px]:mt-6 rounded-3xl
 }
 
 .swiper-slide {
@@ -33,4 +37,5 @@
 .label-col span {
     -webkit-text-stroke: 1px black;
     @apply text-5xl text-red-50
+    max-[500px]:text-3xl
 }

@@ -78,12 +78,12 @@ const Episodes = () => {
                 {!loading ? (
                     data?.map(item => {
                         return <article className="item" key={item.id}>
-                            <div className="img-case">
+                            <Link to={`/characters/${item.id}`} className="img-case">
                                 <img src={item.image} className="img" />
-                            </div>
+                            </Link>
                             <div className="card">
                                 <div className="top">
-                                    <Link className="name">
+                                    <Link to={`/characters/${item.id}`} className="name">
                                         {item.name}
                                     </Link>
                                     <span className="status">
@@ -93,11 +93,11 @@ const Episodes = () => {
                                 </div>
                                 <div className="middle">
                                     <span className="last-location">Последнее появление: </span>
-                                    <Link className="last-location-link">{item.location.name}</Link>
+                                    <a className="last-location-link">{item.location.name}</a>
                                 </div>
                                 <div className="bottom">
                                     <span className="first-location">Происхождение: </span>
-                                    <Link className="first-location-link">{item.origin.name}</Link>
+                                    <a className="first-location-link">{item.origin.name}</a>
                                 </div>
                             </div>
                         </article>

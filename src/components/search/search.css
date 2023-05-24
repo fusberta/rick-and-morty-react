@@ -3,7 +3,7 @@
 }
 
 .search input {
-    @apply px-5 py-3 rounded-l-xl focus:outline-none w-60 sm:w-[380px]
+    @apply px-5 py-3 rounded-l-xl focus:outline-none w-60 sm:w-[380px] max-[360px]:w-44
 }
 
 .search-btn {
@@ -11,5 +11,5 @@
 }
 
 .search-bar {
-    @apply flex items-center gap-9 justify-center flex-col ml-0 sm:flex-row sm:items-end sm:ml-20 sm:gap-0
+    @apply flex items-center gap-4 justify-center flex-col ml-0 sm:flex-row sm:items-end sm:ml-20 sm:gap-0
 }

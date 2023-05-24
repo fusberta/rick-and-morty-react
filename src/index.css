@@ -11,7 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @apply font-sans bg-zinc-900 overflow-y-auto overflow-hidden
+  @apply font-sans bg-zinc-900 overflow-y-auto overflow-x-hidden
 }
 
 code {

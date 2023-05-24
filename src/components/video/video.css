@@ -1,7 +1,21 @@
 .video {
-    @apply min-h-screen bg-zinc-800 flex items-center justify-center flex-col
+    @apply min-h-fit bg-zinc-800 flex items-center justify-center flex-col
 }
 
 .video-label {
-    @apply text-5xl text-zinc-300 mb-16 font-semibold
+    @apply text-5xl text-zinc-300 my-16 font-semibold 
+    max-sm:text-3xl max-sm:my-6
+    max-[400px]:text-xl max-[400px]:my-3
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 45%;
+    overflow: hidden;
+    display: block;
+    width: 80%;
+}
+
+.video-container iframe {
+    @apply absolute top-0 left-0 w-full h-full
 }

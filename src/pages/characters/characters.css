@@ -7,7 +7,8 @@
 }
 
 .item {
-    @apply max-w-md flex overflow-hidden m-4 shadow-md shadow-black rounded-xl border border-slate-900
+    @apply max-w-md flex overflow-hidden m-4 shadow-md shadow-black rounded-xl border border-slate-900 
+    max-[500px]:max-w-sm
 }
 
 .img-case {
@@ -19,11 +20,12 @@
 }
 
 .card {
-    @apply relative flex flex-col justify-between px-4 py-3 w-96 text-stone-100 bg-neutral-900 flex-1 break-words
+    @apply relative flex flex-col justify-between px-4 py-3 w-96 text-stone-100 bg-neutral-900 flex-1 break-words max-[500px]:p-2
 }
 
 .name {
     @apply text-xl font-semibold hover:opacity-90
+    max-[500px]:text-lg
 }
 
 .status {
@@ -39,11 +41,11 @@
 }
 
 .middle {
-    @apply flex flex-col
+    @apply flex flex-col max-[500px]:text-sm
 }
 
 .bottom {
-    @apply flex flex-col
+    @apply flex flex-col max-[500px]:text-sm
 }
 
 .last-location-link {

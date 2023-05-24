@@ -1,13 +1,14 @@
 .footer {
-    @apply w-full px-40 bg-zinc-900 text-white flex justify-between items-center relative z-50 mt-auto
+    @apply w-full px-40 bg-zinc-900 text-white flex justify-between items-center relative z-50 mt-auto 
+    max-xl:px-16 max-lg:px-10 max-md:flex-col max-md:gap-2 max-md:pb-7
 }
 
 .footer-img {
-    @apply w-44
+    @apply w-44 max-xl:w-36 max-[500px]:w-28
 }
 
 .footer-text {
-    @apply font-extralight text-base text-gray-200
+    @apply font-extralight text-center text-base text-gray-200
 }
 
 .footer-logo {

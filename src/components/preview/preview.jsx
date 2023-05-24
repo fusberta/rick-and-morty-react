@@ -7,6 +7,22 @@ import "swiper/css/effect-cards";
 import { Link } from "react-router-dom";
 
 const Preview = () => {
+
+  const [clientWidth, setClientWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+
+    function handleResize() {
+      setClientWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <section className="preview">
       <h1 className="preview-label">
@@ -22,8 +38,8 @@ const Preview = () => {
       </h1>
       <div className="preview-container">
         <Swiper
-          slidesPerView={4}
-          centeredSlides={true}
+          slidesPerView={clientWidth > 1360 ? 6 : clientWidth > 820 ? 4 : 2}
+          centeredSlides={false}
           spaceBetween={10}
           grabCursor={true}
           pagination={{

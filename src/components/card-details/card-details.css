@@ -1,5 +1,5 @@
 .card-details {
-    @apply min-h-screen w-full bg-zinc-300 flex flex-col justify-center items-center text-center rounded-b-[120px] relative overflow-hidden
+    @apply min-h-screen w-full bg-zinc-300 flex flex-col justify-center items-center text-center rounded-b-[120px] relative overflow-hidden px-10
 }
 
 .details-container {
@@ -11,19 +11,19 @@
 }
 
 .circle.top-left {
-    @apply bg-[#f4a48c] -top-[450px] -left-48 w-[1300px] h-[1300px] opacity-40
+    @apply bg-[#f4a48c] -top-[450px] -left-48 w-[70vw] h-[70vw] opacity-40
 }
 
 .circle.top-right {
-    @apply bg-[#044443] -top-[450px] -right-48 w-[1300px] h-[1300px] opacity-40
+    @apply bg-[#044443] -top-[450px] -right-48 w-[70vw] h-[70vw] opacity-40
 }
 
 .circle.bottom-left {
-    @apply bg-[#a06276] -bottom-[450px] -left-48 w-[1300px] h-[1300px] opacity-40
+    @apply bg-[#a06276] -bottom-[450px] -left-48 w-[70vw] h-[70vw] opacity-40
 }
 
 .circle.bottom-right {
-    @apply bg-[#c6650b] -bottom-[450px] -right-48 w-[1300px] h-[1300px] opacity-40
+    @apply bg-[#c6650b] -bottom-[450px] -right-48 w-[70vw] h-[70vw] opacity-40
 }
 
 .character-name {
