@@ -8,7 +8,7 @@ const Header = () => {
 
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [activeTab, setActiveTab] = useState('home');
+  const [activeTab, setActiveTab] = useState(localStorage.getItem('activeTab') || 'home');
   const [open, setOpen] = useState(false);
   const [clientWidth, setClientWidth] = useState(window.innerWidth);
 
@@ -21,7 +21,7 @@ const Header = () => {
 
   const controlHeader = () => {
     if (typeof window !== 'undefined') {
-      if (window.scrollY > lastScrollY) {
+      if (window.scrollY > lastScrollY && window.scrollY > 200) {
         setShow(false);
       } else {
         setShow(true);
@@ -39,6 +39,10 @@ const Header = () => {
       };
     }
   }, [lastScrollY]);
+  
+  useEffect(() => {
+    localStorage.setItem('activeTab', activeTab);
+  }, [activeTab]);
 
   useEffect(() => {
 
