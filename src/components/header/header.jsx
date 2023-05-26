@@ -8,7 +8,7 @@ const Header = () => {
 
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [activeTab, setActiveTab] = useState(sessionStorage.getItem('activeTab') || 'home');
+  const [activeTab, setActiveTab] = useState(sessionStorage.getItem('activeTab') || 'Главная');
   const [open, setOpen] = useState(false);
   const [clientWidth, setClientWidth] = useState(window.innerWidth);
 
@@ -41,7 +41,7 @@ const Header = () => {
   }, [lastScrollY]);
   
   useEffect(() => {
-    localStorage.setItem('activeTab', activeTab);
+    sessionStorage.setItem('activeTab', activeTab);
   }, [activeTab]);
 
   useEffect(() => {
@@ -69,29 +69,29 @@ const Header = () => {
           {clientWidth > 1280 ? <ul className="menu-container">
             <li className="menu-item">
               <Link to={"/"}
-                className={`menu-link ${activeTab === 'home' ? 'active' : ''}`}
-                onClick={() => setActiveTab('home')}>
+                className={`menu-link ${activeTab === 'Главная' ? 'active' : ''}`}
+                onClick={() => setActiveTab('Главная')}>
                 Главная
               </Link>
             </li>
             <li className="menu-item">
               <Link to={"/characters"}
-                className={`menu-link ${activeTab === 'characters' ? 'active' : ''}`}
-                onClick={() => setActiveTab('characters')}>
+                className={`menu-link ${activeTab === 'Персонажи' ? 'active' : ''}`}
+                onClick={() => setActiveTab('Персонажи')}>
                 Персонажи
               </Link>
             </li>
             <li className="menu-item">
               <Link to={"/locations"}
-                className={`menu-link ${activeTab === 'locations' ? 'active' : ''}`}
-                onClick={() => setActiveTab('locations')}>
+                className={`menu-link ${activeTab === 'Локации' ? 'active' : ''}`}
+                onClick={() => setActiveTab('Локации')}>
                 Локации
               </Link>
             </li>
             <li className="menu-item">
               <Link to={"/episodes"}
-                className={`menu-link ${activeTab === 'episodes' ? 'active' : ''}`}
-                onClick={() => setActiveTab('episodes')}>
+                className={`menu-link ${activeTab === 'Эпизоды' ? 'active' : ''}`}
+                onClick={() => setActiveTab('Эпизоды')}>
                 Эпизоды
               </Link>
             </li>
