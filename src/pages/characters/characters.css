@@ -3,7 +3,7 @@
 }
 
 .showcase {
-    @apply flex justify-center items-center flex-wrap max-w-screen-2xl mx-auto mt-8 
+    @apply flex justify-center items-center flex-wrap max-w-screen-2xl mx-auto mt-8 w-full
 }
 
 .item {
