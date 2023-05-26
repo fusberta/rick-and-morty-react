@@ -8,7 +8,7 @@ const Header = () => {
 
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [activeTab, setActiveTab] = useState(localStorage.getItem('activeTab') || 'home');
+  const [activeTab, setActiveTab] = useState(sessionStorage.getItem('activeTab') || 'home');
   const [open, setOpen] = useState(false);
   const [clientWidth, setClientWidth] = useState(window.innerWidth);
 

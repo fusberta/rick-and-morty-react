@@ -15,13 +15,13 @@
 }
 
 .sidebar-link {
-    @apply px-7 py-3 border border-red-700 rounded-xl hover:bg-red-700 transition-all duration-300 shadow-xl hover:shadow-red-900
+    @apply px-7 py-3 border border-red-700 rounded-xl hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-red-900
 }
 
 .sidebar-item {
-    @apply mb-10
+    @apply mb-10 
 }
 
 .sidebar-nav {
-    @apply flex flex-col justify-center items-start
+    @apply flex flex-col justify-center items-start w-full
 }

@@ -1,12 +1,18 @@
 import React, {useEffect, useState} from "react"
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import axios from 'axios';
 import './card-details.css';
+import { IoReturnUpBackOutline } from 'react-icons/io5'
+import { useNavigate } from 'react-router-dom';
 
-const CardDetails = () => {
+const CardDetails = ({ instigator }) => {
 
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
+
+  const navigate = useNavigate();
+
+  const goBack = () => navigate(-1)
 
   const { id } = useParams();
   const { name, image, location, origin, gender, species, status, type } = data ?? {};
@@ -22,6 +28,7 @@ const CardDetails = () => {
     }
 
     getApiData()
+    
   }, [apiUrl]);
 
   return (
@@ -32,6 +39,10 @@ const CardDetails = () => {
       <div className="circle top-right"></div>
       <div className="circle bottom-left"></div>
       <div className="circle bottom-right"></div>
+
+      <button onClick={goBack} className="return-instigator">
+        <IoReturnUpBackOutline size={40}/>
+      </button>
 
       <div className="details-container">
         <h1 className="character-name">{name}</h1>

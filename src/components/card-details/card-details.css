@@ -53,3 +53,8 @@
 .content-label {
     @apply font-bold
 }
+
+.return-instigator {
+    @apply z-10 px-2 py-1 bg-white rounded-xl transition-all duration-200 border mb-3
+    hover:shadow-xl hover:border-black
+}
