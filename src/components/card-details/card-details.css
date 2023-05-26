@@ -27,7 +27,8 @@
 }
 
 .character-name {
-    @apply font-semibold text-4xl text-zinc-800 mb-5
+    @apply font-semibold text-4xl text-zinc-800 mb-5 
+    max-[400px]:text-3xl max-[400px]:mb-1
 }
 
 .details-container > img {
@@ -36,18 +37,22 @@
 
 .status-Alive {
     @apply w-full bg-green-700 mt-5 text-white text-xl py-1 font-semibold tracking-wider rounded-md
+    max-[400px]:mt-3
 }
 
 .status-Dead {
     @apply w-full bg-red-700 mt-5 text-white text-xl py-1 font-bold tracking-wider rounded-md
+    max-[400px]:mt-3
 }
 
 .status-unknown {
     @apply w-full bg-zinc-700 mt-5 text-white text-xl py-1 font-bold tracking-wider rounded-md
+    max-[400px]:mt-3
 }
 
 .details-content {
-    @apply text-start mt-5 text-xl
+    @apply text-start mt-5 text-xl 
+    max-[400px]:text-lg max-[400px]:mt-3
 }
 
 .content-label {
